@@ -9,8 +9,8 @@ Supported Features:
 * Select the string to internationalize ,which adds translate pipe to it.
 * Make the corresponding entry of the selected strinf in en.json file, with a maximum key lenght of 5 words. 
 
-![adds translate pipe](images/gif1.gif)
-![adds to en.json](images/gif2.gif)
+![adds translate pipe](https://raw.githubusercontent.com/rohan-ag/angular-translator/master/images/gif1.gif)
+![adds to en.json](https://raw.githubusercontent.com/rohan-ag/angular-translator/master/images/gif2.gif)
 
 > Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
 
