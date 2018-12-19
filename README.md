@@ -1,65 +1,32 @@
 # angular-translator README
 
-This is the README for your extension "angular-translator". After writing up a brief description,we recommend including the following sections.
+A VS Code extension to internationalize hard-coded strings in html file and build up the en.json file for Angular Projects. 
 
 ## Features
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+Supported Features:
 
-For example if there is an image subfolder under your extension project workspace:
+* Select the string to internationalize ,which adds translate pipe to it.
+* Make the corresponding entry of the selected strinf in en.json file, with a maximum key lenght of 5 words. 
 
-\!\[feature X\]\(images/feature-x.png\)
+![adds translate pipe](images/gif1.gif)
+![adds to en.json](images/gif2.gif)
 
 > Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
 
 ## Requirements
 
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
-
-## Extension Settings
-
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
-
-For example:
-
-This extension contributes the following settings:
-
-* `myExtension.enable`: enable/disable this extension
-* `myExtension.thing`: set to `blah` to do something
+There should be an **i18n** folder inside the **src** folder with an **en.json** File.
 
 ## Known Issues
 
-Calling out known issues can help limit users opening duplicate issues against your extension.
+The extension will not work if the requirement specified above is not met. **It will not create a file automatically in case it is not found.**
 
 ## Release Notes
 
-Users appreciate release notes as you update your extension.
+### 0.0.1
 
-### 1.0.0
+Initial release of Angular-Translator
 
-Initial release of ...
-
-### 1.0.1
-
-Fixed issue #.
-
-### 1.1.0
-
-Added features X, Y, and Z.
-
------------------------------------------------------------------------------------------------------------
-
-## Working with Markdown
-
-**Note:** You can author your README using Visual Studio Code.  Here are some useful editor keyboard shortcuts:
-
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux)
-* Toggle preview (`Shift+CMD+V` on macOS or `Shift+Ctrl+V` on Windows and Linux)
-* Press `Ctrl+Space` (Windows, Linux) or `Cmd+Space` (macOS) to see a list of Markdown snippets
-
-### For more information
-
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
-
+The first release focused on providing a simple semi-automated solution to internationalize all hard coded strings in your angular app for English Language.
 **Enjoy!**
