@@ -1,8 +1,9 @@
 {
   "name": "angular-translator",
   "displayName": "Angular Translator",
-  "description": "Angular Translator helps in creating internationalisation file. Currently supported for English, it will save the pain of adding translate pipe for the text and define key pair for that text in en.json file under i18n.",
+  "description": "Internationalizes hard-coded strings in html file and build up the en.json file for Angular Projects.",
   "version": "0.0.1",
+  "publisher": "RohanAgarwal-Vscode",
   "engines": {
     "vscode": "^1.30.0"
   },
@@ -37,7 +38,7 @@
       }
     ]
   },
-  "icon": "images/Angular-icon",
+  "icon": "images/Angular_icon.png",
   "scripts": {
     "vscode:prepublish": "npm run compile",
     "compile": "tsc -p ./",
