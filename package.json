@@ -10,7 +10,13 @@
     "Other",
     "Programming Languages"
   ],
-  "keywords": ["Angular", "Translator", "Internationalizer", "i18n", "Angular Translator"],
+  "keywords": [
+    "Angular",
+    "Translator",
+    "Internationalizer",
+    "i18n",
+    "Angular Translator"
+  ],
   "activationEvents": [
     "onCommand:extension.angularTranslate"
   ],
@@ -31,6 +37,7 @@
       }
     ]
   },
+  "icon": "images/Angular-icon",
   "scripts": {
     "vscode:prepublish": "npm run compile",
     "compile": "tsc -p ./",
@@ -43,5 +50,9 @@
     "vscode": "^1.1.25",
     "@types/node": "^8.10.25",
     "@types/mocha": "^2.2.42"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rohan-ag/angular-translator.git"
   }
 }
