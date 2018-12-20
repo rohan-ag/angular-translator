@@ -29,4 +29,8 @@ The extension will not work if the requirement specified above is not met. **It 
 Initial release of Angular-Translator
 
 The first release focused on providing a simple semi-automated solution to internationalize all hard coded strings in your angular app for English Language.
+
+### 0.1.1
+This release fixes the issue of duplicate object key in en.json file and converts the key to lowercase.
+
 **Enjoy!**
