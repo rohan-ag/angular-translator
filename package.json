@@ -2,7 +2,7 @@
   "name": "angular-translator",
   "displayName": "Angular Translator",
   "description": "Internationalizes hard-coded strings in html file and build up the en.json file for Angular Projects.",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "publisher": "RohanAgarwal-Vscode",
   "engines": {
     "vscode": "^1.27.0"
