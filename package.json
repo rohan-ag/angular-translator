@@ -5,7 +5,7 @@
   "version": "0.0.1",
   "publisher": "RohanAgarwal-Vscode",
   "engines": {
-    "vscode": "^1.30.0"
+    "vscode": "^1.27.0"
   },
   "categories": [
     "Other",
