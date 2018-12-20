@@ -26,7 +26,7 @@ export async function activate(context: vscode.ExtensionContext) {
 class InternationalizationCreator {
 
   private _document: vscode.TextDocument;
-  private _wordKey: String;
+  private _wordKey: string;
 
   /**
    * @name findAndOpenFile
@@ -60,7 +60,7 @@ class InternationalizationCreator {
     editor.edit(builder => {
       builder.replace(selection, `{{'${this._wordKey}' | translate}}`);
     }).then(success => {
-      var postion = editor.selection.end; 
+      var postion = editor.selection.end;
       editor.selection = new vscode.Selection(postion, postion);
     });
 
@@ -79,12 +79,15 @@ class InternationalizationCreator {
     const workKeyArray: Array<String> = text.trim().split(' ').length > 5 ? text.trim().split(' ').slice(0, 5) : text.split(' ');
     // Remove any character except for alphabets, number and whitespaces.
     workKeyArray.map((word, index) => {
-      workKeyArray[index] = word.replace(/([^a-z0-9\s])/ig, '');
+      const lowerCaseWord = word.toLowerCase();
+      workKeyArray[index] = lowerCaseWord.replace(/([^a-z0-9\s])/ig, '');
     });
-    // Join the formaated word with a underscore to form a string.
+    // Join the formated word with a underscore to form a string.
     this._wordKey = workKeyArray.join('_');
-    // Append the key and value in the file.
-    edit.insert(this._document.uri, secondLastLine.range.end, `,\n"${this._wordKey}": "${text}"`);
+    // Append the key and value in the file if it is not present.
+    if (!this._document.getText().includes(this._wordKey)) {
+      edit.insert(this._document.uri, secondLastLine.range.end, `,\n"${this._wordKey}": "${text}"`);
+    }
     return vscode.workspace.applyEdit(edit);
   }
 
